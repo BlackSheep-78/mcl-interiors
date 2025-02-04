@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Antipasto';
+    src: url('../fonts/Antipasto.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  // Store the font-family in a variable
+  $font-antipasto: 'Antipasto';
+
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/Segoe\ UI.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  // Store the font-family in a variable
+  $font-segoeui: 'Segoe UI';
+
+$color-anthracite: #3e3e3e;
+$color-gris: #a9a9a9;
+$color-font-blanc: #918f88;
+$color-titre-1: #dd412b;
+$color-titre-2: #2f3448;
+
+h1 
+{
+    color: $color-gris;
+    font-family: $font-segoeui;
+}
