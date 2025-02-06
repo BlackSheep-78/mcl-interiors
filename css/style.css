@@ -10,9 +10,62 @@
   font-weight: normal;
   font-style: normal;
 }
-h1 {
-  color: #a9a9a9;
+header h1 {
+  transform: scaleY(3); /* Stretch height */
+  display: inline-block;
   font-family: "Segoe UI";
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.fixed-banner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.news-box {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Adds spacing between news blocks */
+}
+
+.news-box .btn {
+  margin-top: 10px; /* Adds spacing between text and button */
+}
+
+.align-self-end {
+  margin-left: auto; /* Push the button to the right */
+}
+
+/* Remove borders from the columns themselves */
+.col-12, .col-md-4 {
+  border: none !important;
+}
+
+/* Remove any borders from the card elements */
+.card {
+  border: none !important;
+}
+
+/* If there are any borders inside the card header or body */
+.card-header, .card-body {
+  border: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
