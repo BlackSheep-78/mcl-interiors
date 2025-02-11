@@ -1,7 +1,7 @@
     @font-face 
     {
         font-family: 'Antipasto';
-        src: url('../fonts/Antipasto.ttf') format('ttf');
+        src: url('../fonts/Antipasto.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -12,7 +12,7 @@
     @font-face 
     {
         font-family: 'Segoe UI';
-        src: url('../fonts/Segoe\ UI.ttf') format('ttf');
+        src: url('../fonts/Segoe\ UI.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -90,4 +90,13 @@
     .card-header, .card-body 
     {
         border: none !important;
+    }
+
+    .btn-link {
+        text-decoration: none;
+        color: $color-anthracite;
+    
+        &:hover {
+            color: black;
+        }
     }

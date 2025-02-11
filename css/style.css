@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Antipasto";
-  src: url("../fonts/Antipasto.ttf") format("ttf");
+  src: url("../fonts/Antipasto.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Segoe UI";
-  src: url("../fonts/Segoe UI.ttf") format("ttf");
+  src: url("../fonts/Segoe UI.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -66,6 +66,14 @@ header h1 {
 /* If there are any borders inside the card header or body */
 .card-header, .card-body {
   border: none !important;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+.btn-link:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
