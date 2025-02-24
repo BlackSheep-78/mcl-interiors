@@ -28,9 +28,12 @@
 
     header h1 
     {
-        transform: scaleY(3); /* Stretch height */
-        display: inline-block;
-        font-family: $font-segoeui;
+        font-family: $font-antipasto;
+        margin:10px;
+    }
+
+    header div{
+        margin: auto;
     }
 
     .carousel-container 
@@ -99,4 +102,12 @@
         &:hover {
             color: black;
         }
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Aligns text to the bottom */
+        height: 100%; /* Make sure the container takes full height */
+        padding-bottom: 10px; /* Adjust spacing from the bottom */
     }

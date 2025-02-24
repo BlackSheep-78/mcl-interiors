@@ -17,3 +17,5 @@ Thumbs.db
 # Ignore dependency directories
 node_modules/
 vendor/
+
+.ignore
