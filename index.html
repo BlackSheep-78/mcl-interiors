@@ -15,39 +15,42 @@
         <div class=" container h-25 bg-dark mb-4">-</div>
 
         <!-- ***** Header ***** -->
-        <header class="container d-flex mb-5">
-            <div class="text-nowrap col-sm-12 col-md-3 ">Magazine En Ligne</div>
-            <div class="fs-1 col-sm-12 col-md-3">INTERIORS</div>
-            <div class="text-nowrap col-sm-12 col-md-3">Nos Meilleures Idées</div>
+        <header class="container text-center">
+            <div class="row flex-column flex-md-row align-items-center">
+                <div class="col-md-4 col-12 mb-3 mb-md-0">Magazine En Ligne</div>
+                <div class="col-md-4 col-12 fs-1 fw-bold mb-3 mb-md-0">INTERIORS</div>
+                <div class="col-md-4 col-12 mb-3 mb-md-0">Nos Meilleures Idées</div>
+            </div>
         </header>
         
-    <!-- ***** Menu ***** -->
-    <nav class="container navbar navbar-expand-lg navbar-light bg-light justify-content-center py-4 mb-4">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- ***** Menu ***** -->
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light justify-content-center py-4 mb-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item mx-4"><a class="nav-link" href="#">01.ACCUEIL</a></li>
-                <li class="nav-item mx-4"><a class="nav-link" href="#">02.A PROPOS</a></li>
-                <li class="nav-item mx-4"><a class="nav-link" href="#">03.SERVICES</a></li>
-                <li class="nav-item mx-4"><a class="nav-link" href="#">04.GALERIE</a></li>
-                <li class="nav-item mx-4"><a class="nav-link" href="#">05.LES NEWS</a></li>
-                <li class="nav-item mx-4"><a class="nav-link" href="#">06.CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-4"><a class="nav-link" href="#">01.ACCUEIL</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#">02.A PROPOS</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#">03.SERVICES</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#">04.GALERIE</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#">05.LES NEWS</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#">06.CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
         
-        <!-- ***** Carrousel *****              --> 
+         
         <!--     images/chambre-blanche.jpg     -->
         <!--     images/chambre-rose.jpg        -->
         <!--     images/cuisine.jpg             -->
         <!--     images/salon.jpg               -->
 
+        <!-- carroussel -->
         <div class="container mb-4">
             <div class="carousel-container">
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade d-none d-md-block" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/chambre-blanche.jpg" class="d-block w-100" alt="Slide 1">
@@ -62,13 +65,13 @@
                             <img src="images/salon.jpg" class="d-block w-100" alt="Slide 4">
                         </div>
                     </div>
-            
+                
                     <!-- Left (Previous) Button -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-            
+                
                     <!-- Right (Next) Button -->
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -77,143 +80,172 @@
                 </div>
             
                 <!-- Fixed Banner -->
-                <div class="fixed-banner">
-                    <p>pour trouver</p>
-                    <p>les meilleures</p>
-                    <p>solutions...</p>
+                <div class="container fixed-banner d-none d-md-block text-center">
+                    <div class="row flex-column flex-md-row align-items-center">
+                        <div class="col-md-4 col-12 mb-3 mb-md-0">pour trouver</div>
+                        <div class="col-md-4 col-12 fs-1 fw-bold mb-3 mb-md-0">les meilleures</div>
+                        <div class="col-md-4 col-12 mb-3 mb-md-0">solutions...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ***** New Collection Bar ***** -->
+        <div class="container mb-4">
+            <!-- Dark background bar -->
+            <div class="row">
+                <div class="col-12" style="height: 3mm; background-color: #333;"></div>
+            </div>
+
+            <!-- Text bar centered within the dark background -->
+            <div class="row">
+                <div class="col-12 text-center" style="height: 3mm;">
+                    <p class="text-light mb-0">Nouvelle Collection</p>
                 </div>
             </div>
         </div>
 
-        <!-- ***** cards ***** -->
 
+
+
+        <!-- ***** cards ***** -->
         <div class="container mt-4">
             <div class="row g-4">
                 <!-- Card 1 -->
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="col-6  col-md-3">
                     <div class="card h-100">
                         <!-- Top rectangle with text (1:3 ratio) -->
-                        <div class="card-header bg-primary text-white p-3">
-                            <h5 class="text-uppercase text-center fs-1 py-3 text-nowrap">chambres</h5>
+                        <div class="card-header bg-light text-mutted p-3">
+                            <h5 class="text-uppercase text-center fs-4 fs-md-1 py-3 text-nowrap">chambres</h5>
                         </div>
                         <!-- Bottom rectangle with image (4:3 ratio) -->
-                        <img src="images/vignette-chambre.jpg" class="card-img-bottom p-2" alt="Product 1">
+                        <img src="images/vignette-chambre.jpg" class="card-img-bottom bg-light p-2" alt="Product 1">
                     </div>
                 </div>
-        
+
                 <!-- Card 2 -->
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="col-6  col-md-3">
                     <div class="card h-100">
                         <!-- Top rectangle with text (1:3 ratio) -->
-                        <div class="card-header bg-primary text-white p-3">
-                            <h5 class="text-uppercase text-center fs-1 py-3 text-nowrap">cuisines</h5>
+                        <div class="card-header bg-light text-mutted p-3">
+                            <h5 class="text-uppercase text-center fs-4 fs-md-1 py-3 text-nowrap">cuisines</h5>
                         </div>
                         <!-- Bottom rectangle with image (4:3 ratio) -->
-                        <img src="images/vignette-cuisine.jpg" class="card-img-bottom p-2" alt="Product 2">
+                        <img src="images/vignette-cuisine.jpg" class="card-img-bottom bg-light p-2" alt="Product 2">
                     </div>
                 </div>
-        
+
                 <!-- Card 3 -->
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="col-6  col-md-3">
                     <div class="card h-100">
                         <!-- Top rectangle with text (1:3 ratio) -->
-                        <div class="card-header bg-primary text-white p-3">
-                            <h5 class="text-uppercase text-center fs-1 py-3 text-nowrap">salons</h5>
+                        <div class="card-header bg-light text-mutted p-3">
+                            <h5 class="text-uppercase text-center fs-4 fs-md-1 py-3 text-nowrap">salons</h5>
                         </div>
                         <!-- Bottom rectangle with image (4:3 ratio) -->
-                        <img src="images/vignette-fauteuil.jpg" class="card-img-bottom p-2" alt="Product 3">
+                        <img src="images/vignette-fauteuil.jpg" class="card-img-bottom bg-light p-2" alt="Product 3">
                     </div>
                 </div>
-        
+
                 <!-- Card 4 -->
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="col-6  col-md-3">
                     <div class="card h-100">
                         <!-- Top rectangle with text (1:3 ratio) -->
-                        <div class="card-header bg-primary text-white p-3">
-                            <h5 class="text-uppercase text-center fs-1 py-3 text-nowrap">bains</h5>
+                        <div class="card-header bg-light text-mutted p-3">
+                            <h5 class="text-uppercase text-center fs-4 fs-md-1 py-3 text-nowrap">bains</h5>
                         </div>
                         <!-- Bottom rectangle with image (4:3 ratio) -->
-                        <img src="images/vignette-sallebain.jpg" class="card-img-bottom p-2" alt="Product 4">
+                        <img src="images/vignette-sallebain.jpg" class="card-img-bottom bg-light p-2" alt="Product 4">
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="container mt-5">
-            <div class="row">
-                <!-- First Column -->
-                <div class="col-12 col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <!-- Title inside the card -->
-                            <h5 class="card-title">Title for Column 1</h5>
-                            
-                            <!-- News Block 1: Each block is now inside its own rectangle -->
-                            <div class="news-item">
-                                <div class="news-box bg-light p-3">
-                                    <p class="mb-1">21 OCTOBRE 2020</p>
-                                    <p>Découvrez notre collection Lodge et ses différents éléments modulables et créez ainsi votre combinaison! ...</p>
-                                    <!-- +info button -->
-                                    <button class="btn btn-link align-self-end">+info</button>
-                                </div>
-                            </div>
-                            
-                            <!-- News Block 2: Each block is now inside its own rectangle -->
-                            <div class="news-item">
-                                <div class="news-box bg-light p-3">
-                                    <p class="mb-1">14 NOVEMBRE 2020</p>
-                                    <p>Venez dés à présent découvrir dans votre magasin interior,s, l'opération Petits meubles enfants du 14 novembre au 31 décembre ! ...</p>
-                                </div>
-                            </div>
+        
+<!-- News and Contact -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- News Column -->
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">News</h5>
+                    
+                    <!-- News Block 1 -->
+                    <div class="news-item mb-3">
+                        <div class="news-box bg-light p-3 border border-secondary">
+                            <p class="mb-1">21 OCTOBRE 2020</p>
+                            <p>Découvrez notre collection Lodge et ses différents éléments modulables et créez ainsi votre combinaison!</p>
+                            <!-- +info button -->
+                            <button class="btn btn-link align-self-end">+info</button>
                         </div>
                     </div>
-                </div>
-        
-                <!-- Second Column -->
-                <div class="col-12 col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Quelques mots sur notre société</h5>
-                            <p class="card-text">Découvrez notre sélection de meubles contemporains et de mobilier moderne et design pour aménager votre intérieur. Plus de 10,000 objects deco et design en vente.</p>
-                            <div class="small-article">
-                                <p>> Préparer vos cadeaux et vous faire plaisir avec des milliers de produits disponibles et livés chez vous en 24/48h !</p>
-                            </div>
-                            <div class="small-article">
-                                <p>> Noêl 2021 est déjá là! Célébrez un Noêl design avec notre sélection d'idées de cadeaux originales et insolites. Découvrez notre sélection d'objects ludiques et insolites et faites le plein d'idées !</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Third Column -->
-                <div class="col-12 col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <!-- Image at the top (50%) -->
-                            <div class="image-box mb-3" style="height: 50%;">
-                                <img src="images/fond-book.png" class="d-block w-100 h-100 object-fit-cover" alt="Image">
-                            </div>
-                            <!-- Title and form items at the bottom (50%) -->
-                            <div class="form-box" style="height: 50%;">
-                                <h5>Form Title</h5>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="formInput1" class="form-label">Input 1</label>
-                                        <input type="text" class="form-control" id="formInput1" placeholder="Enter text">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="formInput2" class="form-label">Input 2</label>
-                                        <input type="text" class="form-control" id="formInput2" placeholder="Enter text">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
+                    
+                    <!-- News Block 2 -->
+                    <div class="news-item mb-3">
+                        <div class="news-box bg-light p-3 border border-secondary">
+                            <p class="mb-1">14 NOVEMBRE 2020</p>
+                            <p>Venez découvrir dans votre magasin interior, l'opération Petits meubles enfants du 14 novembre au 31 décembre!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Company Column -->
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quelques mots sur notre société</h5>
+                    <p class="card-text">Découvrez notre sélection de meubles contemporains et de mobilier moderne et design pour aménager votre intérieur. Plus de 10,000 objets déco et design en vente.</p>
+                    
+                    <!-- Small Articles Section -->
+                    <div class="small-article mb-2">
+                        <p>> Préparez vos cadeaux et faites-vous plaisir avec des milliers de produits disponibles, livrés chez vous en 24/48h!</p>
+                    </div>
+                    <div class="small-article">
+                        <p>> Noël 2021 est déjà là! Célébrez un Noël design avec notre sélection d'idées cadeaux originales et insolites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog Column -->
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Image Box -->
+                    <div class="image-box mb-3" style="height: 50%;">
+                        <img src="images/fond-book.png" class="d-block w-100 h-100 object-fit-cover" alt="Image">
+                    </div>
+                    
+                    <!-- Form Section -->
+                    <div class="form-box" style="height: 50%;">
+                        <h5>Form Title</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="formInput1" class="form-label">Input 1</label>
+                                <input type="text" class="form-control" id="formInput1" placeholder="Enter text">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formInput2" class="form-label">Input 2</label>
+                                <input type="text" class="form-control" id="formInput2" placeholder="Enter text">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 
         <footer class="container bg-light text-center py-4">
             <p>&copy; GBS - INTERIORS 2023</p>
